@@ -99,20 +99,13 @@ $content-width: ;
 // Full Width = 1200px
 // 1 Column Width = 78px
 // Gutter Width (inside) = 24px
-$rem-col-12-width: rem(1200);
-$rem-col-10-width: rem(996);
-$rem-col-8-width: rem(792);
-$rem-col-6-width: rem(588);
-$rem-col-4-width: rem(384);
-$rem-col-2-width: rem(180);
-
-// Fixed Column Widths (px)
-$px-col-12-width: px(1200);
-$px-col-10-width: px(996);
-$px-col-8-width: px(792);
-$px-col-6-width: px(588);
-$px-col-4-width: px(384);
-$px-col-2-width: px(180);
+$col-12-width: 1200;
+$col-10-width: 996;
+$col-8-width: 792;
+$col-6-width: 588;
+$col-4-width: 384;
+$col-2-width: 180;
+$col-gutter-width: 24;
 
 // Flexible Column Widths (percentage)
 $flex-col-8-width: 792 / 1200 * 100%;
@@ -120,4 +113,4 @@ $flex-col-6-width: 588 / 1200 * 100%;
 $flex-col-4-width: 384 / 1200 * 100%;
 $flex-col-3-width: 282 / 1200 * 100%;
 $flex-col-2-width: 180 / 1200 * 100%;
-$flex-gutter-width: 24 / 1200 * 100%;
+$flex-gutter-width: $col-gutter-width / 1200 * 100%;
