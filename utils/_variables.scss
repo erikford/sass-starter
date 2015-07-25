@@ -81,16 +81,16 @@ $header-font-family: ;
 
 // Typography
 // Typographic Scale = 1.125 Major Second
+$base-font-size: 16;
+$small-font-size: 13;
+$base-line-height: 24;
+$vertical-rhythm-multiple: 3;
 $header-1-size: 26;
 $header-2-size: 23;
 $header-3-size: 20;
 $header-4-size: 18;
 $header-5-size: $base-font-size;
-$header-6-size: $small-text-size;
-$base-font-size: 16;
-$small-text-size: 13;
-$base-line-height: leading(24, $base-font-size);
-$vertical-rhythm-multiple: 3;
+$header-6-size: $small-font-size;
 
 // Content Width
 $content-width: ;

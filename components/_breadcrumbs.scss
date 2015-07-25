@@ -2,6 +2,6 @@
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
-    @include typeset($small-text-size, (6 * $vertical-rhythm-multiple));
+    @include typeset($small-font-size, (6 * $vertical-rhythm-multiple));
     @include truncate-text-scroll;
 }

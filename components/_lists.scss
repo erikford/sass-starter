@@ -10,7 +10,7 @@ ul, ol, dl {
 ul {
     list-style: disc;
     padding-left: px(6 * $vertical-rhythm-multiple);
-    padding-left: rem(6 * $$vertical-rhythm-multiple);
+    padding-left: rem(6 * $vertical-rhythm-multiple);
     @include breakpoint(600) {
         padding-left: 0;
     }
@@ -45,7 +45,7 @@ ul ul, ol ul, ul ol, ol ol {
 
 ul ul, ol ul {
     padding-left: px(6 * $vertical-rhythm-multiple);
-    padding-left: rem(6 * $$vertical-rhythm-multiple);
+    padding-left: rem(6 * $vertical-rhythm-multiple);
 }
 
 ul ol, ol ol {

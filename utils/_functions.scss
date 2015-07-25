@@ -1,16 +1,16 @@
 // Calculate Em Size
 @function em($target, $context: 16) {
-    @return ($target / $context) * 1em;
+    @return ($target / $context) + em;
 }
 
 // Calculate Rem Size
 @function rem($target, $context: 16) {
-    @return ($target / $context) * 1rem;
+    @return ($target / $context) + rem;
 }
 
 // Convert to PX
 @function px($target) {
-    @return $target * 1px;
+    @return $target + 1px;
 }
 
 // Calculate Unitless Leading

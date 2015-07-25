@@ -30,7 +30,7 @@
         color: $text-color;
         display: inline-block;
         left: -9999em;
-        line-height: leading(7 * $vertical-rhythm-multiple);
+        line-height: leading(7 * $vertical-rhythm-multiple, $base-font-size);
         margin: 0 px(1 * $vertical-rhythm-multiple);
         margin: 0 rem(1 * $vertical-rhythm-multiple);
         padding: rem(2 * $vertical-rhythm-multiple) em(3 * $vertical-rhythm-multiple);
