@@ -25,17 +25,23 @@ sass/
 |-- layout/
 |   |-- _footer.scss           # Footer
 |   |-- _grid.scss             # Grid System
+|   |-- _gutters.scss          # Browser Chrome Gutters
 |   |-- _header.scss           # Header
 |   |-- _navigation.scss       # Navigation
 |
 |-- pages/
 |   |-- _article.scss          # Article
 |
+|-- partials
+|   |-- _hero-block.scss       # Hero Block
+|   |-- _marcomm-content.scss  # Marketing Communications Content
+|   |-- _tri-col-block         # Tri-column Block
+|
 |-- utils/
-|   |-- _variables.scss        # Sass Variables
 |   |-- _functions.scss        # Sass Functions
-|   |-- _mixins.scss           # Sass Mixins
 |   |-- _helpers.scss          # Class Helpers
+|   |-- _mixins.scss           # Sass Mixins
+|   |-- _variables.scss        # Sass Variables
 |
 `-- main.scss                  # Primary Sass File
 */
@@ -52,6 +58,7 @@ sass/
 
 // Layout
 @import 'layout/grid';
+@import 'layout/gutters';
 @import 'layout/navigation';
 @import 'layout/header';
 @import 'layout/footer';
@@ -72,6 +79,11 @@ sass/
 @import 'components/breadcrumbs';
 @import 'components/footnotes';
 @import 'components/hr';
+
+// Partials
+@import 'partials/marcomm-content';
+@import 'partials/hero-block';
+@import 'partials/tri-col-block';
 
 // Pages
 @import 'pages/article';

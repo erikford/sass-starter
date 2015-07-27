@@ -40,8 +40,8 @@ input[type=time], input[type=week], input[type=file], textarea, select {
     color: $text-color;
     display: inline-block;
     font-size: inherit;
-    padding: px(4 * $vertical-rhythm-multiple) px(9 * $vertical-rhythm-multiple);
-    padding: rem(4 * $vertical-rhythm-multiple) rem(9 * $vertical-rhythm-multiple);
+    padding: px(4 * $vertical-rhythm-multiple) px(5 * $vertical-rhythm-multiple);
+    padding: rem(4 * $vertical-rhythm-multiple) rem(5 * $vertical-rhythm-multiple);
 }
 
 input[type=text], input[type=email], input[type=url], input[type=password],
