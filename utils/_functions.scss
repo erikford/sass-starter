@@ -10,7 +10,7 @@
 
 // Convert to PX
 @function px($target) {
-    @return $target + 1px;
+    @return $target + px;
 }
 
 // Calculate Unitless Leading
