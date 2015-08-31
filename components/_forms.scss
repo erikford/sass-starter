@@ -2,7 +2,7 @@
 # Form Elements
 --------------------------------------------------------------*/
 form {
-    background-color: $gray-bg-color;
+    background-color: lighten($gray-bg-color, 5%);
     border-radius: px(5);
     border-radius: rem(5);
     padding: px(8 * $vertical-rhythm-multiple);
@@ -32,16 +32,17 @@ input[type=text], input[type=email], input[type=url], input[type=password],
 input[type=search], input[type=color], input[type=date], input[type=datetime],
 input[type=datetime-local], input[type=number], input[type=range], input[type=tel],
 input[type=time], input[type=week], input[type=file], textarea, select {
-    @include font-setting($font-family-alt, normal, 500);
+    @include font-setting($font-family-alt, normal, 400);
     @include appearance(none);
     background-color: $white;
-    border: px(2 * $vertical-rhythm-multiple) solid $light-border-color;
-    border-radius: 0;
+    border: px(2) solid $light-border-color;
+    border-radius: px(4);
+    border-radius: rem(4);
     color: $text-color;
     display: inline-block;
     font-size: inherit;
-    padding: px(4 * $vertical-rhythm-multiple) px(5 * $vertical-rhythm-multiple);
-    padding: rem(4 * $vertical-rhythm-multiple) rem(5 * $vertical-rhythm-multiple);
+    padding: px(2 * $vertical-rhythm-multiple) px(3 * $vertical-rhythm-multiple);
+    padding: rem(2 * $vertical-rhythm-multiple) rem(3 * $vertical-rhythm-multiple);
 }
 
 input[type=text], input[type=email], input[type=url], input[type=password],
@@ -93,11 +94,25 @@ select {
 
 input[type=radio], input[type=checkbox] {
     display: inline-block;
-    margin-right: px(3 * $vertical-rhythm-multiple);
-    margin-right: rem(3 * $vertical-rhythm-multiple);
     top: -(px(1 * $vertical-rhythm-multiple));
     top: -(rem(1 * $vertical-rhythm-multiple));
     vertical-align: middle;
+}
+
+input[type=radio] {
+    margin-right: px(3 * $vertical-rhythm-multiple);
+    margin-right: rem(3 * $vertical-rhythm-multiple);
+}
+
+input[type=checkbox] {
+    margin-right: px($vertical-rhythm-multiple);
+    margin-right: rem($vertical-rhythm-multiple);
+}
+
+input[type=radio], input[type=checkbox] {
+    &:checked + label {
+        font-weight: 700;
+    }
 }
 
 input[type=submit], button[type=submit], input[type=button] {
@@ -110,8 +125,8 @@ input[type=submit], button[type=submit], input[type=button] {
     color: $white;
     font-size: inherit;
     margin: 0;
-    padding: px(4 * $vertical-rhythm-multiple) px(8 * $vertical-rhythm-multiple);
-    padding: rem(4 * $vertical-rhythm-multiple) rem(8 * $vertical-rhythm-multiple);
+    padding: px(3 * $vertical-rhythm-multiple) px(6 * $vertical-rhythm-multiple);
+    padding: rem(3 * $vertical-rhythm-multiple) rem(6 * $vertical-rhythm-multiple);
     transition: all 0.25s ease-in-out 0s;
 }
 

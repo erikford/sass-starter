@@ -1,0 +1,127 @@
+/*--------------------------------------------------------------
+# Progress Bar
+--------------------------------------------------------------*/
+h3.gf_progressbar_title {
+    @include typeset($small-font-size, 6 * $vertical-rhythm-multiple);
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: px(2 * $vertical-rhythm-multiple);
+    margin-bottom: rem(2 * $vertical-rhythm-multiple);
+    opacity: 0.6;
+}
+
+.gf_progressbar_wrapper {
+    border-bottom: px(1) dotted $light-border-color;
+    margin: 0 0 px(3 * $vertical-rhythm-multiple) 0;
+    margin: 0 0 rem(3 * $vertical-rhythm-multiple) 0;
+    padding: 0 0 px(5 * $vertical-rhythm-multiple) 0;
+    padding: 0 0 rem(5 * $vertical-rhythm-multiple) 0;
+}
+
+.gf_progressbar {
+    background-color: $white;
+    border-radius: px(100);
+    height: px(24);
+    line-height: px(24);
+    overflow: hidden;
+}
+
+.gf_progressbar_percentage {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: px($small-font-size);
+    font-size: rem($small-font-size);
+    height: px(24);
+    text-align: right;
+    text-shadow: 0 1px 1px $alpha-fifty-black;
+}
+
+.gf_progressbar_percentage {
+    span {
+        display: block;
+        float: right;
+        margin-left: px(2 * $vertical-rhythm-multiple);
+        margin-left: rem(2 * $vertical-rhythm-multiple);
+        margin-right: px(2 * $vertical-rhythm-multiple);
+        margin-right: rem(2 * $vertical-rhythm-multiple);
+        width: auto;
+    }
+}
+
+.gf_progressbar_percentage.percentbar_0 span {
+    color: #959595;
+    text-shadow: none;
+}
+
+.percentbar_blue {
+    background-color: #0072bc;
+    border-radius: px(100);
+    color: $white;
+}
+
+.percentbar_gray {
+    background-color: #666;
+    border-radius: px(100);
+    color: $white;
+}
+.percentbar_green {
+    background-color: #94dc21;
+    border-radius: px(100);    
+    color: $white;
+}
+
+.percentbar_orange {
+    background-color: #dc7021;
+    border-radius: px(100);
+    color: $white;
+}
+
+.percentbar_red {
+    background-color: #dc2521;
+    border-radius: px(100);
+    color: $white;
+}
+
+.gform_wrapper .percentbar_custom {
+    background-image: url(../../assets/img/gf-percentbar-custom.png);
+    background-repeat: repeat-x;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+input.gform_previous_button,
+input.gform_next_button {
+    background-color: $secondary-button-color;
+    display: inline-block;
+    &:hover {
+        background-color: $secondary-button-color-hover;
+    }
+}
+
+.gform_previous_button {
+    @include floating-left;
+}
+
+.gform_next_button {
+    @include floating-right;
+}
+
+.gform_previous_button {
+    margin-bottom: px(3 * $vertical-rhythm-multiple);
+    margin-bottom: rem(3 * $vertical-rhythm-multiple);
+}
+
+.gform_next_button,
+.gform_previous_button {
+    margin-right: px(3 * $vertical-rhythm-multiple);
+    margin-right: rem(3 * $vertical-rhythm-multiple);
+}
+
+/*--------------------------------------------------------------
+# Spinner
+--------------------------------------------------------------*/
+.gform_ajax_spinner {
+    @include center-block;
+    top: px(3 * $vertical-rhythm-multiple);
+    top: rem(3 * $vertical-rhythm-multiple);
+}

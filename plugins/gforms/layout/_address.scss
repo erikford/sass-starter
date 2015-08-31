@@ -1,0 +1,41 @@
+/*--------------------------------------------------------------
+# Address
+--------------------------------------------------------------*/
+.has_city,
+.has_state {
+    .ginput_left.address_city,
+    .ginput_right.address_state {
+        width: 100%;
+        @include breakpoint(360) {
+            width: 49.008264%;
+        }
+    }
+    .ginput_right.address_state {
+        margin-left: 0;
+        @include breakpoint(360) {
+            margin-left: 1.983471%;
+        }
+    }
+}
+
+.has_zip {
+    .ginput_right.address_zip {
+        margin-left: 0;
+        width: 100%;
+        @include breakpoint(360) {
+            margin-left: 1.983471%;
+            width: 49.008264%;
+        }
+    }
+}
+
+.has_country {
+    .ginput_left.address_country {
+        display: block;
+        margin-left: 0;
+        width: 100%;
+        @include breakpoint(360) {
+            width: 49.008264%;
+        }
+    }
+}

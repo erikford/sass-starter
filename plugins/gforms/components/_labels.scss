@@ -1,0 +1,52 @@
+/*--------------------------------------------------------------
+# Labels
+--------------------------------------------------------------*/
+.top_label,
+.right_label,
+.left_label {
+    .gfield_label {
+        @include typeset(14, 7 * $vertical-rhythm-multiple);
+        font-weight: 700;
+    }
+}
+
+/*--------------------------------------------------------------
+# Required
+--------------------------------------------------------------*/
+.gfield_required {
+    color: $stop-color;
+    margin-left: px($vertical-rhythm-multiple);
+    margin-left: rem($vertical-rhythm-multiple);
+}
+
+/*--------------------------------------------------------------
+# Labels below Input
+--------------------------------------------------------------*/
+.ginput_complex,
+.gfield_time_hour,
+.gfield_time_minute,
+.gfield_time_ampm,
+.gfield_date_month,
+.gfield_date_day,
+.gfield_date_year {
+    label {
+        @include typeset($small-font-size, 6 * $vertical-rhythm-multiple);
+        display: block;
+        margin: px(2 * $vertical-rhythm-multiple) 0 px(4 * $vertical-rhythm-multiple) px(4 * $vertical-rhythm-multiple);
+        margin: rem(2 * $vertical-rhythm-multiple) 0 rem(4 * $vertical-rhythm-multiple) rem(4 * $vertical-rhythm-multiple);
+        white-space: nowrap;
+    }
+}
+
+/*--------------------------------------------------------------
+# Instructions
+--------------------------------------------------------------*/
+.gform_wrapper {
+    .instruction {
+        @include typeset($small-font-size, 6 * $vertical-rhythm-multiple);
+        display: block;
+        margin: px($vertical-rhythm-multiple) 0 px(4 * $vertical-rhythm-multiple);
+        margin: rem($vertical-rhythm-multiple) 0 rem(4 * $vertical-rhythm-multiple);
+        white-space: nowrap;
+    }
+}

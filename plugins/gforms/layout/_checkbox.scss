@@ -1,0 +1,36 @@
+/*--------------------------------------------------------------
+# Checkbox
+--------------------------------------------------------------*/
+.gform_wrapper {
+    .gfield_checkbox,
+    .gfield_radio {
+        @include reset-list;
+    }
+}
+
+.gfield_checkbox,
+.gfield_radio {
+    li {
+        margin: 0 0 px($vertical-rhythm-multiple) 0;
+        margin: 0 0 rem($vertical-rhythm-multiple) 0;
+    }
+}
+
+.gfield_radio {
+    li {
+        input[value=gf_other_choice] {
+            margin-right: px(2 * $vertical-rhythm-multiple);
+            margin-right: rem(2 * $vertical-rhythm-multiple);
+            margin-top: px($vertical-rhythm-multiple);
+            margin-top: rem($vertical-rhythm-multiple);
+        }
+    }
+}
+
+.gfield_radio {
+    li {
+        input[type=radio] + input[type=text] {
+            width: 45.25%;
+        }
+    }
+}

@@ -1,0 +1,96 @@
+/*--------------------------------------------------------------
+# Date Field
+--------------------------------------------------------------*/
+.gfield_date_month,
+.gfield_date_day,
+.gfield_date_year {
+    display: inline-block;
+    vertical-align: top;
+    width: px(25 * $vertical-rhythm-multiple);
+    width: rem(25 * $vertical-rhythm-multiple);
+}
+
+.gfield_date_month,
+.gfield_date_day {
+    input {
+        width: 85%;
+    }
+}
+
+.gfield_date_year {
+    input {
+        width: 88%;
+    }
+}
+
+/*--------------------------------------------------------------
+# Date Drop Down
+--------------------------------------------------------------*/
+.gfield_date_dropdown_month,
+.gfield_date_dropdown_day,
+.gfield_date_dropdown_year {
+    display: inline-block;
+    margin-right: px(2 * $vertical-rhythm-multiple);
+    margin-right: rem(2 * $vertical-rhythm-multiple);
+}
+
+.gfield_date_dropdown_month {
+    width: px(32 * $vertical-rhythm-multiple);
+    width: rem(32 * $vertical-rhythm-multiple);
+}
+
+.gfield_date_dropdown_day,
+.gfield_date_dropdown_year {
+    width: px(25 * $vertical-rhythm-multiple);
+    width: rem(25 * $vertical-rhythm-multiple);
+}
+
+/*--------------------------------------------------------------
+# UI Date Picker
+--------------------------------------------------------------*/
+.ui-datepicker-header {
+    background-color: $white;
+    border: px(3) solid $light-border-color;
+    border-bottom: none;
+    border-radius: px(4) px(4) 0 0;
+    border-radius: rem(4) rem(4) 0 0;
+    font-size: px(14);
+    font-size: rem(14);
+    padding: px(4 * $vertical-rhythm-multiple);
+    padding: rem(4 * $vertical-rhythm-multiple);
+    text-align: center;
+    a {
+        display: inline-block;
+        margin: 0 px(2 * $vertical-rhythm-multiple) px(3 * $vertical-rhythm-multiple);
+        margin: 0 rem(2 * $vertical-rhythm-multiple) rem(3 * $vertical-rhythm-multiple);
+    }
+}
+
+.ui-datepicker-title {
+    select {
+        margin: 0 px(2 * $vertical-rhythm-multiple);
+        margin: 0 rem(2 * $vertical-rhythm-multiple);
+        width: 33.33%;
+    }
+}
+
+.ui-datepicker-calendar {
+    @include typeset(14, 6 * $vertical-rhythm-multiple);
+    margin-top: 0;
+    th,
+    td {
+        padding: px(2 * $vertical-rhythm-multiple) px(3 * $vertical-rhythm-multiple);
+        padding: rem(2 * $vertical-rhythm-multiple) rem(3 * $vertical-rhythm-multiple);
+        text-align: center;
+    }
+}
+
+.gform_wrapper {
+    .ui-datepicker-trigger {
+        display: inline-block;
+        height: px(16);
+        top: px(4);
+        top: rem(4);
+        width: px(17);
+    }
+}

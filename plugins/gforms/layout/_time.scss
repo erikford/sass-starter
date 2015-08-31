@@ -1,0 +1,33 @@
+/*--------------------------------------------------------------
+# Time
+--------------------------------------------------------------*/
+.gfield_time_hour i {
+    font-style: normal;
+}
+
+.gfield_time_hour,
+.gfield_time_minute {
+    display: inline-block;
+    vertical-align: top;
+    width: px(25 * $vertical-rhythm-multiple);
+    width: rem(25 * $vertical-rhythm-multiple);
+}
+
+.gfield_time_hour,
+.gfield_time_minute {
+    input {
+        width: 85%;
+    }
+}
+
+.gfield_time_ampm {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.gfield_time_ampm {
+    select {
+        width: px(25 * $vertical-rhythm-multiple);
+        width: rem(25 * $vertical-rhythm-multiple);
+    }
+}

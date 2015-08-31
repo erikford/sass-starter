@@ -1,0 +1,99 @@
+/*--------------------------------------------------------------
+# List
+--------------------------------------------------------------*/
+.gfield_list {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+}
+.gfield_list {
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td {
+        background-color: transparent;
+        border: none;
+        margin: 0;
+        padding: 0;
+        vertical-align: baseline;
+    }
+}
+
+.gfield_list {
+    th {
+        @include typeset(14, 7 * $vertical-rhythm-multiple);
+        color: inherit;
+        text-align: left;
+    }
+}
+
+.gform_wrapper li.gfield.gfield_error table.gfield_list thead th {
+    color: $stop-color;
+}
+
+.gfield_list {
+    th, td {
+        padding: px($vertical-rhythm-multiple) 0 px($vertical-rhythm-multiple) 0;
+        padding: rem($vertical-rhythm-multiple) 0 rem($vertical-rhythm-multiple) 0;
+    }
+}
+
+.gfield_list {
+    th + th,
+    td + td {
+        padding: 0 0 0 px(4);
+        padding: 0 0 0 rem(4);
+    }
+}
+
+.left_label,
+.right_label {
+    .gfield_list {
+        width: 75%;
+    }
+}
+
+.left_label,
+.right_label {
+    .gf_list_one_column {
+        width: 45%;
+    }
+}
+
+.top_label {
+    .gf_list_one_column {
+        width: 46%;
+    }
+}
+
+.gfield_list_cell {
+    input {
+        width: 97.5%;
+    }
+}
+
+.gfield_icon_disabled {
+    cursor: default !important;
+    opacity: 0.1 !important;
+}
+
+.gfield_list {
+    .gfield_list_icons,
+    td:last-child {
+        min-width: px(20 * $vertical-rhythm-multiple);
+        min-width: rem(20 * $vertical-rhythm-multiple);
+        padding: 0 0 0 px(2 * $vertical-rhythm-multiple);
+        padding: 0 0 0 rem(2 * $vertical-rhythm-multiple);
+        width: auto;
+    }
+}
+
+.gfield_list_icons {
+    img {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}

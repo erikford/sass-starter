@@ -1,0 +1,25 @@
+/*--------------------------------------------------------------
+# Pricing
+--------------------------------------------------------------*/
+.ginput_product_price_label {
+    margin-right: px(2 * $vertical-rhythm-multiple);
+    margin-right: rem(2 * $vertical-rhythm-multiple);
+}
+
+.ginput_product_price {
+    color: $brand-color;
+}
+
+.ginput_quantity_label {
+    margin-left: px(2 * $vertical-rhythm-multiple);
+    margin-left: rem(2 * $vertical-rhythm-multiple);
+    margin-right: px($vertical-rhythm-multiple);
+    margin-right: rem($vertical-rhythm-multiple);
+}
+
+.gfield_price {
+    .ginput_quantity {
+        width: px(24 * $vertical-rhythm-multiple);
+        width: rem(24 * $vertical-rhythm-multiple);
+    }
+}

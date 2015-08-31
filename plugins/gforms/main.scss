@@ -1,0 +1,55 @@
+/*
+gforms/
+|
+|-- base/
+|   |-- _forms-main.scss            # Base Rules
+|
+|-- components/
+|   |-- _inputs.scss                # Form Inputs
+|   |-- _labels.scss                # Form Labels
+|
+|-- layout/
+|   |-- _address.scss               # Address Layout
+|   |-- _base-layout.scss           # Base Layout
+|   |-- _checkbox.scss              # Checkbox & Radio Button Layout
+|   |-- _date.scss                  # Date Layout
+|   |-- _multi-select.scss          # Multi-select Layout
+|   |-- _list.scss                  # List Layout
+|   |-- _name.scss                  # Name Layout
+|   |-- _pagination.scss            # Paginated Forms
+|   |-- _pricing.scss               # Pricing Layout
+|   |-- _rtl.scss                   # Right to Left Layout
+|   |-- _time.scss                  # Time Layout
+|
+|-- partials/
+|   |-- _browsers.scss              # Browser Specific Styles
+|   |-- _ready-class.scss           # Custom Classes
+|   |-- _validation.scss            # Validation Styles
+|
+`-- main.scss                       # Primary Sass File
+*/
+
+// Base
+@import 'base/forms-main.scss';
+
+// Components
+@import 'components/labels.scss';
+@import 'components/inputs.scss';
+
+// Layout
+@import 'layout/base-layout';
+@import 'layout/name';
+@import 'layout/address';
+@import 'layout/date';
+@import 'layout/time';
+@import 'layout/list';
+@import 'layout/multi-select';
+@import 'layout/checkbox';
+@import 'layout/pricing';
+@import 'layout/pagination';
+@import 'layout/rtl';
+
+// Partials
+@import 'partials/ready-class';
+@import 'partials/browsers';
+@import 'partials/validation';

@@ -1,0 +1,65 @@
+/*--------------------------------------------------------------
+# Validation Error
+--------------------------------------------------------------*/
+.gform_wrapper {
+    .validation_error {
+        color: $stop-color;
+        margin-bottom: px($base-line-height);
+        margin-bottom: rem($base-line-height);
+        padding: px(5 * $vertical-rhythm-multiple) 0 0 0;
+        padding: rem(5 * $vertical-rhythm-multiple) 0 0 0;
+    }
+}
+
+.gfield_error,
+.gfield_creditcard_warning {
+    border-bottom: px(1) dotted $stop-color;
+    border-top: px(1) dotted $stop-color;
+    background-color: lighten($stop-color, 50%);
+}
+
+.gfield_error {
+    .gfield_label {
+        color: $stop-color;
+        margin-top: px(4 * $vertical-rhythm-multiple);
+        margin-top: rem(4 * $vertical-rhythm-multiple);
+    }
+}
+
+.gfield.gfield_error.gfield_contains_required {
+    .ginput_container,
+    .gfield_description,
+    .gfield_label {
+        margin-left: px(4 * $vertical-rhythm-multiple);
+        margin-left: rem(4 * $vertical-rhythm-multiple);
+        margin-right: px(4 * $vertical-rhythm-multiple);
+        margin-right: rem(4 * $vertical-rhythm-multiple);
+    }
+}
+
+.gform_wrapper {
+    .validation_message {
+        color: $stop-color;
+    }
+}
+
+.gfield_error {
+    input[type=text],
+    input[type=url],
+    input[type=email],
+    input[type=tel],
+    input[type=number],
+    input[type=password],
+    input[type=file],
+    textarea,
+    .chosen-container-multi .chosen-choices {
+        border-color: $stop-color;
+    }
+}
+
+.gfield_error {
+    .gfield_checkbox,
+    .gfield_radio {
+        color: $stop-color;
+    }
+}

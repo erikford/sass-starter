@@ -1,0 +1,117 @@
+/*--------------------------------------------------------------
+# Left & Right Aligned Labels
+--------------------------------------------------------------*/
+.gform_wrapper {
+    ul.right_label,
+    form ul.right_label,
+    ul.left_label,
+    form ul.left_label {
+        li {
+            @include clearfix;
+        }
+    }
+}
+
+.gform_wrapper {
+    .right_label,
+    .left_label {
+        .gfield_label {
+            @include breakpoint(560) {
+                @include floating-left;
+                margin-right: 2%;
+                text-align: right;
+                width: 23%;
+            }
+        }
+    }
+}
+
+.gform_wrapper {
+    .right_label,
+    .left_label {
+        .ginput_complex {
+            @include breakpoint(560) {
+                @include floating-left;
+                width: 75%;
+            }
+        }
+    }
+}
+
+.gform_wrapper {
+    .left_label,
+    .right_label {
+        .gfield_checkbox,
+        .gfield_radio {
+            @include breakpoint(430) {
+                @include floating-left;
+                width: 75%;
+            }
+        }
+    }
+}
+
+/*--------------------------------------------------------------
+# Two Columns Elements
+--------------------------------------------------------------*/
+.ginput_complex {
+    .ginput_left,
+    .ginput_right {
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        @include breakpoint(430) {
+            width: 48.5%;
+        }
+    }
+}
+
+.ginput_complex {
+    .ginput_right {
+        @include breakpoint(430) {
+            margin-left: 1.983471%;
+        }
+    }
+}
+
+/*--------------------------------------------------------------
+# Form Footer
+--------------------------------------------------------------*/
+.gform_wrapper {
+    .gform_footer {
+        @include clearfix;
+        margin: px(5 * $vertical-rhythm-multiple) 0 0 0;
+        margin: rem(5 * $vertical-rhythm-multiple) 0 0 0;
+        padding: px(5 * $vertical-rhythm-multiple) 0 px(3 * $vertical-rhythm-multiple) 0;
+        padding: rem(5 * $vertical-rhythm-multiple) 0 rem(3 * $vertical-rhythm-multiple) 0;
+    }
+}
+
+.gform_wrapper {
+    .gform_footer.right_label,
+    .gform_footer.left_label {
+        @include breakpoint(430) {
+            margin-left: 25%;
+            width: 75%;
+        }
+    }
+}
+
+.gform_wrapper .gform_footer input.button,
+.gform_wrapper .gform_footer input[type=submit],
+.gform_wrapper .gform_footer input[type=image] {
+    display: inline-block;
+}
+
+.gform_wrapper .gform_footer a.gform_save_link {
+    display: inline-block;
+    margin-left: px(5 * $vertical-rhythm-multiple);
+    margin-left: rem(5 * $vertical-rhythm-multiple);
+}
+
+.gform_wrapper .gform_footer input[type=image] {
+    background: none !important;
+    border: none !important;
+    padding: 0;
+    width: auto !important;
+}
